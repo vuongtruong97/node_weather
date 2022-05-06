@@ -59,6 +59,15 @@ body {
   font-family: inherit;
   height: 40px;
 }
+.content .weather_details .weather_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.265);
+  margin-top: 16px;
+  padding: 0 16px;
+  border-radius: 26px;
+}
 .content h1 {
   color: rgb(97, 97, 97);
   margin: 0;
