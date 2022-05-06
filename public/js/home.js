@@ -19,11 +19,7 @@ inputSearch.onblur = (e) => {
 searchBtn.addEventListener('click', () => {
     weatherDetails.innerHTML = `<span>Loading...</span>`
     if (inputSearch.value.trim().length > 0) {
-        fetch(
-            `http://localhost:3000/weather?address=${encodeURIComponent(
-                inputSearch.value
-            )}`
-        )
+        fetch(`/weather?address=${encodeURIComponent(inputSearch.value)}`)
             .then((res) => {
                 res.json().then((data) => {
                     if (data.error) {

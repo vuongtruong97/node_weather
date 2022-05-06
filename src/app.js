@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const handlebars = require('express-handlebars')
 const path = require('path')
@@ -5,6 +6,7 @@ const forecast = require('./utils/forecast')
 const geocoding = require('./utils/geocoding')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 //defined paths for express config
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -81,6 +83,6 @@ app.get('*', (req, res) => {
         message: 'Page not found',
     })
 })
-app.listen(3000, () => {
-    console.log(`Server is running on http://localhost:3000`)
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`)
 })
