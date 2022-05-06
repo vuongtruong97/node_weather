@@ -1,5 +1,5 @@
 require('dotenv').config()
-
+const fetch = require('node-fetch')
 const { GEO_TOKEN } = process.env
 
 async function geocoding(address) {

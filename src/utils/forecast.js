@@ -1,4 +1,6 @@
 require('dotenv').config()
+const fetch = require('node-fetch')
+
 const { API_KEY, API_UNIT } = process.env
 
 async function forecast(longitude, latitude) {
