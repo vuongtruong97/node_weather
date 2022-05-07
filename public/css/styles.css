@@ -85,31 +85,34 @@ body {
   border-radius: 26px;
 }
 .content .weather_details .forecast {
-  background-color: #0aa1dd;
+  background-image: url("../image/author.avif");
+  background-size: cover;
+  background-position: center;
   padding: 30px;
   border-radius: 16px;
   margin-top: 16px;
-  color: #e8f9fd;
+  color: #171717;
   width: 350px;
   overflow: hidden;
 }
 .content .weather_details .forecast.clouds {
-  background-color: #5c7788;
+  background-image: url("../image/clouds.avif");
 }
 .content .weather_details .forecast.rain {
-  background-color: rgb(92, 92, 92);
+  color: rgb(255, 255, 255);
+  background-image: url("../image/rain.avif");
 }
 .content .weather_details .forecast.mist {
-  background-color: #a3a0a0;
+  background-image: url("../image/mist.avif");
 }
 .content .weather_details .forecast.haze {
-  background-color: #a3a0a0;
+  background-image: url("../image/haze.avif");
 }
 .content .weather_details .forecast.fog {
-  background-color: #a3a0a0;
+  background-image: url("../image/fog.avif");
 }
 .content .weather_details .forecast.clear {
-  background-color: #0aa1dd;
+  background-image: url("../image/clear.avif");
 }
 .content .weather_details .forecast .forecast_title {
   font-size: 35px;
