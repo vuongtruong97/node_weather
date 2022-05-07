@@ -84,6 +84,53 @@ body {
   padding: 0 16px;
   border-radius: 26px;
 }
+.content .weather_details .forecast {
+  background-color: #0aa1dd;
+  padding: 30px;
+  border-radius: 16px;
+  margin-top: 16px;
+  color: #e8f9fd;
+  width: 350px;
+  overflow: hidden;
+}
+.content .weather_details .forecast.clouds {
+  background-color: #5c7788;
+}
+.content .weather_details .forecast.rain {
+  background-color: rgb(92, 92, 92);
+}
+.content .weather_details .forecast.mist {
+  background-color: #a3a0a0;
+}
+.content .weather_details .forecast.haze {
+  background-color: #a3a0a0;
+}
+.content .weather_details .forecast.fog {
+  background-color: #a3a0a0;
+}
+.content .weather_details .forecast.clear {
+  background-color: #0aa1dd;
+}
+.content .weather_details .forecast .forecast_title {
+  font-size: 35px;
+}
+.content .weather_details .forecast .forecast_weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+.content .weather_details .forecast .forecast_weather .weather_temp {
+  font-size: 60px;
+}
+.content .weather_details .forecast .forecast_description {
+  display: flex;
+  flex-direction: column;
+}
+.content .weather_details .forecast .forecast_description .des_title {
+  font-size: 30px;
+  font-weight: 600;
+}
 .content h1 {
   color: rgb(49, 49, 49);
   font-size: 60px;

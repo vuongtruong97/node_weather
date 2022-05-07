@@ -25,18 +25,26 @@ searchBtn.addEventListener('click', () => {
                     if (data.error) {
                         return (weatherDetails.innerHTML = `<h2>${data.error}</h2>`)
                     }
-                    weatherDetails.innerHTML = `
-                    <div class='weather_title'>
-                    <h2>Weather at :<b> ${data.location}</b></h2>
-                    <img src='https://openweathermap.org/img/wn/${data.weather.icon}@2x.png' />
+                    weatherDetails.innerHTML = `<div class='forecast ${data.weather.main.toLowerCase()}'>
+                    <div class='forecast_title'>${data.location},${
+                        data.country
+                    }</div>
+                    <div class='forecast_weather'>
+                        <span class='weather_temp'>${Math.round(
+                            data.temp
+                        )}°C</span>
+                        <img src='https://openweathermap.org/img/wn/${
+                            data.weather.icon
+                        }@2x.png' />
                     </div>
-                                            <ul>
-                                                <li>Temperature:<b> ${data.temp}  °C</b></li>
-                                                <li>Humidity:<b> ${data.humidity} %</b></li>
-                                                <li>Pressure:<b> ${data.pressure}  ba</b>r</li>
-                                                <li>Visibility:<b> ${data.visibility} m</b></li>
-                                                <li>Winspeed:<b> ${data.windspeed} m/s</b></li>
-                                            </ul>`
+                    <div class='forecast_description'>
+                        <span class='des_title'>${data.weather.main}</span>
+                        <span>Humidity:${data.humidity} %</span>
+                        <span>Pressure:${data.pressure} ba</span>
+                        <span>Wind:${data.windspeed} km/h</span>
+                        <spN>Visibility: ${data.visibility} m </span>
+                    </div>
+                </div>`
                 })
             })
             .catch((e) => {
