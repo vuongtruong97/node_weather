@@ -85,11 +85,20 @@ body {
   border-radius: 26px;
 }
 .content h1 {
+  color: rgb(49, 49, 49);
+  font-size: 60px;
+  margin: 0;
+}
+.content h3 {
   color: rgb(97, 97, 97);
   margin: 0;
 }
 .content p {
   margin: 0;
+}
+.content a {
+  color: rgb(0, 116, 170);
+  text-decoration: none;
 }
 
 .footer {
